@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>BrAPI: Plant Breeding API</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <div id="nav">
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo">&nbsp;<img src="images/brapilogo.png" height="60px" /></a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="collaborators.html">Collaborators</a></li>
+                    <li class="active"><a href="dataproviders.html">Data Providers</a></li>
+                    <li><a href="showcase.html">Showcase</a></li>
+                    <li><a target="_blank" href="http://docs.brapi.apiary.io/">Docs</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li>
+                        <a href="#">
+                            <input id="search" type="search" placeholder="search">
+                        </a>
+                    </li>
+                    <li><a href="#aboutDiv">Home</a></li>
+                    <li><a href="collaborators.html">Collaborators</a></li>
+                    <li class="active"><a href="dataproviders.html">Data Providers</a></li>
+                    <li class="active"><a href="showcase.html">Showcase</a></li>
+                    <li><a target="_blank" href="http://docs.brapi.apiary.io/">Docs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<!-- main content -->
+<main>
+<br/><br/>
+<div class="col s12 center">      
+<h3><p class="mdi-content-send brown-text">List of APIs Compatible With BrAPI</p></h3>
+<div id="showcaseTable" class="align-center center">
+  <table class="responsive bordered">
+        <thead>
+          <tr>
+              <th>Institute</th>
+              <th>API and Link</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Institute 1</td>
+            <td>Why is this wonderful?</td>
+          </tr>
+        </tbody>
+  </table>
+  <br/>
+</div>
+</div>
+</main>
+
+  <footer class="page-footer teal">
+    <div class="footer-copyright">
+      <div class="container">
+        
+          &copy;2014-2018 <a class="brown-text text-lighten-3">BrAPI</a> | Privacy Policy 
+    
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://use.fontawesome.com/3ae18a1985.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('.scrollspy').scrollSpy();
+      $('.carousel').carousel({
+        indicators: true,
+        duration: 10,
+        dist: 0,
+        padding: 200
+      });
+    });
+  </script>
+  <style type="text/css">
+    a{
+      text-decoration: none;
+    }
+
+    #showcaseTable{
+      margin: 0px auto;
+      width: 80%;
+    }
+
+    #showcaseTable table tr td img{
+      width: 60px;
+      height: 60px;
+    }
+
+    .collaborators-cards div{
+      margin-right: 10px;
+      text-align: center;
+    }
+
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+      }
+
+      main {
+        flex: 1 0 auto;
+      }
+      
+  </style>      
+  </body>
+</html>
